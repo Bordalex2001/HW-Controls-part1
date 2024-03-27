@@ -1,0 +1,21 @@
+﻿<Window x:Class="HW_Controls__part_1_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_Controls__part_1_"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Height="50" HorizontalAlignment="Center">
+            <Button x:Name="previousTabBtn" Height="30" Width="30" Margin="10" Content="&#x1F860;" FontWeight="Bold" FontSize="18" FontFamily="Segoe UI Symbol" Click="previousTabBtn_Click"/>
+            <Button x:Name="nextTabBtn" Height="30" Width="30" Margin="10" Content="&#x1F862;" FontWeight="Bold" FontSize="18" FontFamily="Segoe UI Symbol" Click="nextTabBtn_Click"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Right" Orientation="Vertical" Width="100" VerticalAlignment="Center">
+            <Button x:Name="addImageBtn" Margin="10" Content="➕ Додати" FontFamily="Segoe UI Symbol" Foreground="#FF40DD23"/>
+            <Button x:Name="deleteImage" Margin="10" Content="❌ Видалити" FontFamily="Segoe UI Symbol" Foreground="#FFFF0404" Click="deletePhoto_Click"/>
+        </StackPanel>
+        <TabControl x:Name="imageTabControl" SelectionChanged="imageTabControl_SelectionChanged">
+        </TabControl>
+    </DockPanel>
+</Window>
